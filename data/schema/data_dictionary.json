@@ -1,0 +1,16 @@
+{
+  "dataset_time_utc": "2026-10-14T12:00:00Z",
+  "simulation_note": "All records are synthetic and intentionally imperfect; document assumptions and data gaps.",
+  "formats": {
+    "users.json": "users[].id,upn,enabled,account_type,last_signin_at",
+    "groups.json": "groups[].id,name,description",
+    "group_memberships.json": "memberships[].group_id,member_id,member_type",
+    "workload_identities.json": "service_principals[],managed_identities[]",
+    "workload_credentials.json": "credentials[].principal_id,credential_type,expires_at",
+    "rbac_assignments.json": "assignments[].principal_id,role,scope,assignment_type",
+    "pim_assignments.json": "pim_assignments[].principal_id,role,scope,state,activation_start,activation_end",
+    "conditional_access_policies.json": "policies[].state,include_users,exclude_users,include_groups,exclude_groups,apps,conditions,controls",
+    "entra_signins.csv": "event_id,timestamp,user_id,app,source_ip,result,mfa_satisfied,device_compliant,client_app",
+    "network_flows.csv": "event_id,timestamp,source_ip,destination_ip,destination_port,action,bytes_out,bytes_in,zone"
+  }
+}

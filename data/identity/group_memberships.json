@@ -1,0 +1,579 @@
+{
+  "memberships": [
+    {
+      "group_id": "g-cloud-admins",
+      "member_id": "u-001",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-admins",
+      "member_id": "u-005",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-admins",
+      "member_id": "u-009",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-platform",
+      "member_id": "u-001",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-platform",
+      "member_id": "u-005",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-platform",
+      "member_id": "u-008",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-platform",
+      "member_id": "u-009",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-platform",
+      "member_id": "u-017",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-app-dev",
+      "member_id": "u-007",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-app-dev",
+      "member_id": "u-020",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-app-dev",
+      "member_id": "u-008",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-app-dev",
+      "member_id": "u-023",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-app-dev",
+      "member_id": "u-028",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-dba",
+      "member_id": "u-012",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-dba",
+      "member_id": "u-032",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-security",
+      "member_id": "u-002",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-security",
+      "member_id": "u-014",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-contractors",
+      "member_id": "u-013",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-contractors",
+      "member_id": "u-018",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-contractors",
+      "member_id": "u-046",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-contractors",
+      "member_id": "u-052",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-helpdesk",
+      "member_id": "u-015",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-helpdesk",
+      "member_id": "u-034",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-data",
+      "member_id": "u-006",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-data",
+      "member_id": "u-012",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-data",
+      "member_id": "u-035",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-netops",
+      "member_id": "u-016",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-netops",
+      "member_id": "u-019",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-netops",
+      "member_id": "u-003",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-ops",
+      "member_id": "u-003",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-ops",
+      "member_id": "u-010",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-ops",
+      "member_id": "u-019",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-legacy",
+      "member_id": "u-018",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-legacy",
+      "member_id": "u-066",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-devops",
+      "member_id": "u-008",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-devops",
+      "member_id": "u-017",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-devops",
+      "member_id": "u-031",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-001",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-002",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-003",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-004",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-005",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-006",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-007",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-008",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-009",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-010",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-011",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-012",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-013",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-014",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-015",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-016",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-017",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-018",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-019",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-020",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-021",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-022",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-023",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-024",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-025",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-026",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-027",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-028",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-029",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-030",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-031",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-032",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-033",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-034",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-035",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-036",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-037",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-038",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-039",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-040",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-041",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-042",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-043",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-044",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-045",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-046",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-048",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-049",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-050",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-051",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-052",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-053",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-054",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-055",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-056",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-057",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-058",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-059",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-060",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-061",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-062",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-063",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-064",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-066",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-067",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-068",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-069",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-070",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-071",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-072",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-073",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-074",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-075",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-076",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-077",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-079",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-all",
+      "member_id": "u-080",
+      "member_type": "user"
+    },
+    {
+      "group_id": "g-cloud-platform",
+      "member_id": "g-devops",
+      "member_type": "group"
+    }
+  ]
+}

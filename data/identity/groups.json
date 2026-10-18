@@ -1,0 +1,69 @@
+{
+  "groups": [
+    {
+      "id": "g-cloud-admins",
+      "name": "grp-cloud-admins",
+      "description": "Cloud admin operators"
+    },
+    {
+      "id": "g-cloud-platform",
+      "name": "grp-cloud-platform",
+      "description": "Platform engineers"
+    },
+    {
+      "id": "g-app-dev",
+      "name": "grp-app-developers",
+      "description": "App engineers"
+    },
+    {
+      "id": "g-dba",
+      "name": "grp-dba",
+      "description": "DBA team"
+    },
+    {
+      "id": "g-security",
+      "name": "grp-security-readers",
+      "description": "Security auditors"
+    },
+    {
+      "id": "g-contractors",
+      "name": "grp-temp-contractors",
+      "description": "Short-term support"
+    },
+    {
+      "id": "g-helpdesk",
+      "name": "grp-helpdesk",
+      "description": "Identity support"
+    },
+    {
+      "id": "g-data",
+      "name": "grp-data-analysts",
+      "description": "BI data analysts"
+    },
+    {
+      "id": "g-netops",
+      "name": "grp-network-operators",
+      "description": "Network engineering"
+    },
+    {
+      "id": "g-ops",
+      "name": "grp-shared-operations",
+      "description": "Shared operations"
+    },
+    {
+      "id": "g-all",
+      "name": "grp-all-employees",
+      "description": "All employees"
+    },
+    {
+      "id": "g-legacy",
+      "name": "grp-legacy-automation",
+      "description": "Legacy automation"
+    },
+    {
+      "id": "g-devops",
+      "name": "grp-devops-deploy",
+      "description": "CI/CD deployment team"
+    }
+  ]
+}

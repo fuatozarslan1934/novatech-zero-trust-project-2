@@ -1,0 +1,59 @@
+{
+  "subscriptions": [
+    {
+      "id": "sub-nvt-prod-001",
+      "name": "NovaTech-Production",
+      "environment": "production"
+    },
+    {
+      "id": "sub-nvt-shared-002",
+      "name": "NovaTech-Shared",
+      "environment": "shared"
+    }
+  ],
+  "resource_groups": [
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "name": "rg-web-prod",
+      "zone": "web"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "name": "rg-app-prod",
+      "zone": "app"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "name": "rg-data-prod",
+      "zone": "data"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-security-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "name": "rg-security-prod",
+      "zone": "security"
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-shared-services",
+      "subscription_id": "sub-nvt-shared-002",
+      "name": "rg-shared-services",
+      "zone": "shared"
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox",
+      "subscription_id": "sub-nvt-shared-002",
+      "name": "rg-dev-sandbox",
+      "zone": "dev"
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-ops-tooling",
+      "subscription_id": "sub-nvt-shared-002",
+      "name": "rg-ops-tooling",
+      "zone": "ops"
+    }
+  ],
+  "snapshot_time_utc": "2026-10-14T12:00:00Z"
+}

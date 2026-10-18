@@ -1,0 +1,147 @@
+{
+  "zones": [
+    {
+      "name": "web",
+      "cidr": "10.41.1.0/24"
+    },
+    {
+      "name": "app",
+      "cidr": "10.41.2.0/24"
+    },
+    {
+      "name": "data",
+      "cidr": "10.41.3.0/24"
+    },
+    {
+      "name": "admin",
+      "cidr": "10.41.8.0/24"
+    },
+    {
+      "name": "corp-vpn",
+      "cidr": "10.41.10.0/24"
+    },
+    {
+      "name": "dev",
+      "cidr": "10.42.1.0/24"
+    },
+    {
+      "name": "shared",
+      "cidr": "10.42.2.0/24"
+    }
+  ],
+  "nsg_rules": [
+    {
+      "nsg": "nsg-web-prod",
+      "priority": 100,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "0.0.0.0/0",
+      "port": 443
+    },
+    {
+      "nsg": "nsg-web-prod",
+      "priority": 110,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "0.0.0.0/0",
+      "port": 22
+    },
+    {
+      "nsg": "nsg-web-prod",
+      "priority": 160,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "10.41.10.0/24",
+      "port": 3389
+    },
+    {
+      "nsg": "nsg-web-prod",
+      "priority": 400,
+      "action": "Deny",
+      "protocol": "*",
+      "source": "0.0.0.0/0",
+      "port": "*"
+    },
+    {
+      "nsg": "nsg-app-prod",
+      "priority": 100,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "10.41.1.0/24",
+      "port": 8080
+    },
+    {
+      "nsg": "nsg-app-prod",
+      "priority": 150,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "10.41.8.0/24",
+      "port": 22
+    },
+    {
+      "nsg": "nsg-app-prod",
+      "priority": 400,
+      "action": "Deny",
+      "protocol": "*",
+      "source": "0.0.0.0/0",
+      "port": "*"
+    },
+    {
+      "nsg": "nsg-data-prod",
+      "priority": 100,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "10.41.2.0/24",
+      "port": 1433
+    },
+    {
+      "nsg": "nsg-data-prod",
+      "priority": 200,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "10.41.1.0/24",
+      "port": 1433
+    },
+    {
+      "nsg": "nsg-data-prod",
+      "priority": 400,
+      "action": "Deny",
+      "protocol": "*",
+      "source": "0.0.0.0/0",
+      "port": "*"
+    },
+    {
+      "nsg": "nsg-admin-shared",
+      "priority": 100,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "10.41.10.0/24",
+      "port": 22
+    },
+    {
+      "nsg": "nsg-admin-shared",
+      "priority": 400,
+      "action": "Deny",
+      "protocol": "*",
+      "source": "0.0.0.0/0",
+      "port": "*"
+    },
+    {
+      "nsg": "nsg-dev-shared",
+      "priority": 100,
+      "action": "Allow",
+      "protocol": "TCP",
+      "source": "10.42.0.0/16",
+      "port": 22
+    },
+    {
+      "nsg": "nsg-dev-shared",
+      "priority": 400,
+      "action": "Deny",
+      "protocol": "*",
+      "source": "0.0.0.0/0",
+      "port": "*"
+    }
+  ],
+  "training_note": "Ordered rules; lower numeric priority first. Do not treat reachability alone as evidence that authentication can be bypassed."
+}

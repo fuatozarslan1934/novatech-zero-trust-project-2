@@ -1,0 +1,60 @@
+{
+  "pim_assignments": [
+    {
+      "id": "pim-001",
+      "principal_id": "u-005",
+      "role": "Owner",
+      "scope": "sub-nvt-prod-001",
+      "state": "eligible",
+      "requires_mfa": true,
+      "requires_justification": true,
+      "activation_start": null,
+      "activation_end": null
+    },
+    {
+      "id": "pim-002",
+      "principal_id": "u-001",
+      "role": "Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "state": "active",
+      "requires_mfa": true,
+      "requires_justification": true,
+      "activation_start": "2026-10-14T10:00:00Z",
+      "activation_end": "2026-10-14T14:00:00Z"
+    },
+    {
+      "id": "pim-003",
+      "principal_id": "u-009",
+      "role": "Owner",
+      "scope": "sub-nvt-prod-001",
+      "state": "expired",
+      "requires_mfa": true,
+      "requires_justification": true,
+      "activation_start": "2026-10-12T12:00:00Z",
+      "activation_end": "2026-10-12T16:00:00Z"
+    },
+    {
+      "id": "pim-004",
+      "principal_id": "u-014",
+      "role": "Security Reader",
+      "scope": "sub-nvt-prod-001",
+      "state": "eligible",
+      "requires_mfa": true,
+      "requires_justification": true,
+      "activation_start": null,
+      "activation_end": null
+    },
+    {
+      "id": "pim-005",
+      "principal_id": "u-012",
+      "role": "SQL DB Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "state": "active",
+      "requires_mfa": true,
+      "requires_justification": true,
+      "activation_start": "2026-10-14T11:00:00Z",
+      "activation_end": "2026-10-14T15:00:00Z"
+    }
+  ],
+  "snapshot_time_utc": "2026-10-14T12:00:00Z"
+}

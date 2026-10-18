@@ -1,0 +1,14 @@
+{
+  "description": "Example format only; replace IDs and changes based on your own findings. Not a solution.",
+  "changes": [
+    {
+      "type": "rbac_remove",
+      "assignment_id": "ra-EXAMPLE"
+    },
+    {
+      "type": "ca_state_change",
+      "policy_id": "ca-EXAMPLE",
+      "new_state": "report_only"
+    }
+  ]
+}

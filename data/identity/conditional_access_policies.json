@@ -1,0 +1,143 @@
+{
+  "policies": [
+    {
+      "id": "ca-001",
+      "name": "Require MFA for administrative portal",
+      "state": "enabled",
+      "include_users": [
+        "all"
+      ],
+      "exclude_users": [
+        "u-003"
+      ],
+      "include_groups": [],
+      "exclude_groups": [],
+      "apps": [
+        "Azure Portal"
+      ],
+      "conditions": {
+        "locations": [
+          "all"
+        ]
+      },
+      "controls": {
+        "require_mfa": true
+      }
+    },
+    {
+      "id": "ca-002",
+      "name": "Require compliant device for DevOps",
+      "state": "report_only",
+      "include_users": [],
+      "exclude_users": [],
+      "include_groups": [
+        "g-devops"
+      ],
+      "exclude_groups": [],
+      "apps": [
+        "Azure DevOps"
+      ],
+      "conditions": {
+        "locations": [
+          "all"
+        ]
+      },
+      "controls": {
+        "require_compliant_device": true
+      }
+    },
+    {
+      "id": "ca-003",
+      "name": "Block legacy sign-ins",
+      "state": "enabled",
+      "include_users": [
+        "all"
+      ],
+      "exclude_users": [],
+      "include_groups": [],
+      "exclude_groups": [],
+      "apps": [
+        "all"
+      ],
+      "conditions": {
+        "client_apps": [
+          "legacy"
+        ]
+      },
+      "controls": {
+        "block": true
+      }
+    },
+    {
+      "id": "ca-004",
+      "name": "MFA for external vendor access",
+      "state": "enabled",
+      "include_users": [],
+      "exclude_users": [],
+      "include_groups": [
+        "g-contractors"
+      ],
+      "exclude_groups": [
+        "g-helpdesk"
+      ],
+      "apps": [
+        "Azure Portal",
+        "Azure DevOps"
+      ],
+      "conditions": {
+        "locations": [
+          "untrusted"
+        ]
+      },
+      "controls": {
+        "require_mfa": true
+      }
+    },
+    {
+      "id": "ca-005",
+      "name": "Require compliant devices for production admin",
+      "state": "disabled",
+      "include_users": [],
+      "exclude_users": [],
+      "include_groups": [
+        "g-cloud-admins"
+      ],
+      "exclude_groups": [],
+      "apps": [
+        "Azure Portal"
+      ],
+      "conditions": {
+        "locations": [
+          "all"
+        ]
+      },
+      "controls": {
+        "require_compliant_device": true
+      }
+    },
+    {
+      "id": "ca-006",
+      "name": "Block untrusted locations for finance portal",
+      "state": "report_only",
+      "include_users": [],
+      "exclude_users": [],
+      "include_groups": [
+        "g-data"
+      ],
+      "exclude_groups": [],
+      "apps": [
+        "Finance Portal"
+      ],
+      "conditions": {
+        "locations": [
+          "untrusted"
+        ]
+      },
+      "controls": {
+        "block": true
+      }
+    }
+  ],
+  "simplified_model": true,
+  "notice": "Training simulator; not a substitute for Microsoft Entra Conditional Access What If evaluation."
+}

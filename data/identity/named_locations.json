@@ -1,0 +1,22 @@
+{
+  "named_locations": [
+    {
+      "id": "loc-corp",
+      "label": "trusted",
+      "cidrs": [
+        "10.41.0.0/16",
+        "10.42.0.0/16",
+        "192.0.2.0/27"
+      ]
+    },
+    {
+      "id": "loc-external",
+      "label": "untrusted",
+      "cidrs": [
+        "198.51.100.0/24",
+        "203.0.113.0/24"
+      ]
+    }
+  ],
+  "default_location_label": "untrusted"
+}

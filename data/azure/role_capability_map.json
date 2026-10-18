@@ -1,0 +1,55 @@
+{
+  "disclaimer": "Simplified project-only permissions; NOT authoritative Azure built-in role definitions. Consult Microsoft docs for actual Actions/DataActions/NotActions and exceptions.",
+  "role_capabilities": {
+    "Owner": [
+      "resource.read",
+      "resource.write",
+      "rbac.assign",
+      "rbac.read"
+    ],
+    "Contributor": [
+      "resource.read",
+      "resource.write",
+      "rbac.read"
+    ],
+    "Reader": [
+      "resource.read"
+    ],
+    "User Access Administrator": [
+      "rbac.assign",
+      "rbac.read"
+    ],
+    "Network Contributor": [
+      "network.read",
+      "network.write"
+    ],
+    "Virtual Machine Contributor": [
+      "vm.read",
+      "vm.write"
+    ],
+    "Storage Blob Data Reader": [
+      "storage.blob.read"
+    ],
+    "Storage Blob Data Contributor": [
+      "storage.blob.read",
+      "storage.blob.write"
+    ],
+    "Key Vault Secrets User": [
+      "keyvault.secret.read"
+    ],
+    "Key Vault Administrator": [
+      "keyvault.secret.read",
+      "keyvault.secret.write"
+    ],
+    "SQL DB Contributor": [
+      "sql.read",
+      "sql.write"
+    ],
+    "Security Reader": [
+      "security.read"
+    ],
+    "Monitoring Reader": [
+      "log.read"
+    ]
+  }
+}

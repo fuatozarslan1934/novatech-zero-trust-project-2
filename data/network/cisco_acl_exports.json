@@ -1,0 +1,65 @@
+{
+  "acls": [
+    {
+      "device": "RTR-HQ-01",
+      "acl": "OUTSIDE-IN",
+      "seq": 10,
+      "action": "permit",
+      "protocol": "tcp",
+      "src": "0.0.0.0/0",
+      "dst": "203.0.113.41/32",
+      "dst_port": 443
+    },
+    {
+      "device": "RTR-HQ-01",
+      "acl": "OUTSIDE-IN",
+      "seq": 15,
+      "action": "permit",
+      "protocol": "tcp",
+      "src": "0.0.0.0/0",
+      "dst": "203.0.113.41/32",
+      "dst_port": 22
+    },
+    {
+      "device": "RTR-HQ-01",
+      "acl": "OUTSIDE-IN",
+      "seq": 100,
+      "action": "deny",
+      "protocol": "ip",
+      "src": "0.0.0.0/0",
+      "dst": "10.41.0.0/16",
+      "dst_port": "*"
+    },
+    {
+      "device": "SW-CORE-01",
+      "acl": "WEB-TO-DATA",
+      "seq": 30,
+      "action": "permit",
+      "protocol": "tcp",
+      "src": "10.41.1.0/24",
+      "dst": "10.41.3.0/24",
+      "dst_port": 1433
+    },
+    {
+      "device": "SW-CORE-01",
+      "acl": "WEB-TO-DATA",
+      "seq": 50,
+      "action": "deny",
+      "protocol": "ip",
+      "src": "10.41.1.0/24",
+      "dst": "10.41.3.0/24",
+      "dst_port": "*"
+    },
+    {
+      "device": "SW-CORE-01",
+      "acl": "ADMIN",
+      "seq": 10,
+      "action": "permit",
+      "protocol": "tcp",
+      "src": "10.41.10.0/24",
+      "dst": "10.41.8.0/24",
+      "dst_port": 22
+    }
+  ],
+  "disclaimer": "Synthetic normalized ACL export; evaluate ordered rules within the same ACL, not as one global ACL."
+}

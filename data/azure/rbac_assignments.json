@@ -1,0 +1,325 @@
+{
+  "assignments": [
+    {
+      "id": "ra-001",
+      "principal_id": "g-cloud-admins",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-002",
+      "principal_id": "g-cloud-admins",
+      "role": "Contributor",
+      "scope": "sub-nvt-shared-002/resourceGroups/rg-shared-services",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-003",
+      "principal_id": "g-cloud-platform",
+      "role": "Virtual Machine Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-web-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-004",
+      "principal_id": "g-app-dev",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-005",
+      "principal_id": "g-dba",
+      "role": "SQL DB Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-006",
+      "principal_id": "g-security",
+      "role": "Security Reader",
+      "scope": "sub-nvt-prod-001",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-007",
+      "principal_id": "g-contractors",
+      "role": "Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-008",
+      "principal_id": "g-data",
+      "role": "Storage Blob Data Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Storage/storageAccounts/stbillingprod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-009",
+      "principal_id": "g-netops",
+      "role": "Network Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-web-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-010",
+      "principal_id": "g-ops",
+      "role": "Contributor",
+      "scope": "sub-nvt-shared-002/resourceGroups/rg-ops-tooling",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-011",
+      "principal_id": "g-legacy",
+      "role": "Reader",
+      "scope": "sub-nvt-shared-002",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-012",
+      "principal_id": "g-devops",
+      "role": "Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-013",
+      "principal_id": "u-003",
+      "role": "Owner",
+      "scope": "sub-nvt-prod-001",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-014",
+      "principal_id": "u-002",
+      "role": "Reader",
+      "scope": "sub-nvt-shared-002",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-015",
+      "principal_id": "u-006",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-016",
+      "principal_id": "u-018",
+      "role": "User Access Administrator",
+      "scope": "sub-nvt-prod-001",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-017",
+      "principal_id": "u-017",
+      "role": "Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-security-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-018",
+      "principal_id": "u-015",
+      "role": "Reader",
+      "scope": "sub-nvt-shared-002",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-019",
+      "principal_id": "sp-ci-prod",
+      "role": "Contributor",
+      "scope": "sub-nvt-prod-001",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-020",
+      "principal_id": "sp-data-import",
+      "role": "Storage Blob Data Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Storage/storageAccounts/stcustomerfilesprod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-021",
+      "principal_id": "sp-monitor",
+      "role": "Monitoring Reader",
+      "scope": "sub-nvt-prod-001",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-022",
+      "principal_id": "sp-retired",
+      "role": "Owner",
+      "scope": "sub-nvt-shared-002",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-023",
+      "principal_id": "sp-webhook",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-024",
+      "principal_id": "mi-edge-portal",
+      "role": "Key Vault Secrets User",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.KeyVault/vaults/kv-billing-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-025",
+      "principal_id": "mi-app-core",
+      "role": "Key Vault Secrets User",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.KeyVault/vaults/kv-app-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-026",
+      "principal_id": "mi-checkout-prod",
+      "role": "Storage Blob Data Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Storage/storageAccounts/stappassetsprod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-027",
+      "principal_id": "mi-hr-app",
+      "role": "Key Vault Secrets User",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.KeyVault/vaults/kv-customer-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-028",
+      "principal_id": "mi-inventory-app",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-029",
+      "principal_id": "u-031",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-web-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-030",
+      "principal_id": "u-032",
+      "role": "Monitoring Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-031",
+      "principal_id": "u-033",
+      "role": "Virtual Machine Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-032",
+      "principal_id": "u-034",
+      "role": "Reader",
+      "scope": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-033",
+      "principal_id": "u-035",
+      "role": "Monitoring Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-web-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-034",
+      "principal_id": "u-036",
+      "role": "Virtual Machine Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-035",
+      "principal_id": "u-037",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-036",
+      "principal_id": "u-038",
+      "role": "Monitoring Reader",
+      "scope": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-037",
+      "principal_id": "u-039",
+      "role": "Virtual Machine Contributor",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-web-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-038",
+      "principal_id": "u-040",
+      "role": "Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-app-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-039",
+      "principal_id": "u-041",
+      "role": "Monitoring Reader",
+      "scope": "sub-nvt-prod-001/resourceGroups/rg-data-prod",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    },
+    {
+      "id": "ra-040",
+      "principal_id": "u-042",
+      "role": "Virtual Machine Contributor",
+      "scope": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox",
+      "assignment_type": "active",
+      "created_at": "2026-05-27T12:00:00Z"
+    }
+  ],
+  "snapshot_time_utc": "2026-10-14T12:00:00Z"
+}

@@ -1,0 +1,445 @@
+{
+  "resources": [
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Compute/virtualMachines/vm-portal-edge-01",
+      "name": "vm-portal-edge-01",
+      "type": "vm",
+      "resource_group": "rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "web",
+      "private_ip": "10.41.1.11",
+      "public_ip": "203.0.113.41",
+      "ssh_password_auth": true,
+      "identity_id": "mi-edge-portal",
+      "nsg": "nsg-web-prod",
+      "tags": {
+        "env": "prod",
+        "owner": "platform"
+      }
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Compute/virtualMachines/vm-portal-edge-02",
+      "name": "vm-portal-edge-02",
+      "type": "vm",
+      "resource_group": "rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "web",
+      "private_ip": "10.41.1.12",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "nsg": "nsg-web-prod",
+      "tags": {
+        "env": "prod",
+        "owner": "platform"
+      }
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.Compute/virtualMachines/vm-app-core-01",
+      "name": "vm-app-core-01",
+      "type": "vm",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "app",
+      "private_ip": "10.41.2.12",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": "mi-app-core",
+      "nsg": "nsg-app-prod",
+      "tags": {
+        "env": "prod",
+        "owner": "application"
+      }
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Compute/virtualMachines/vm-reporting-01",
+      "name": "vm-reporting-01",
+      "type": "vm",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "data",
+      "private_ip": "10.41.3.21",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "nsg": "nsg-data-prod",
+      "tags": {
+        "env": "prod",
+        "owner": "analytics"
+      }
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-ops-tooling/providers/Microsoft.Compute/virtualMachines/vm-ops-jump-01",
+      "name": "vm-ops-jump-01",
+      "type": "vm",
+      "resource_group": "rg-ops-tooling",
+      "subscription_id": "sub-nvt-shared-002",
+      "zone": "admin",
+      "private_ip": "10.41.8.9",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "nsg": "nsg-admin-shared",
+      "tags": {
+        "env": "shared",
+        "owner": "infra"
+      }
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/virtualMachines/vm-dev-build-01",
+      "name": "vm-dev-build-01",
+      "type": "vm",
+      "resource_group": "rg-dev-sandbox",
+      "subscription_id": "sub-nvt-shared-002",
+      "zone": "dev",
+      "private_ip": "10.42.1.9",
+      "public_ip": null,
+      "ssh_password_auth": true,
+      "identity_id": null,
+      "nsg": "nsg-dev-shared",
+      "tags": {
+        "env": "dev",
+        "owner": "engineering"
+      }
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.Web/sites/app-checkout-prod",
+      "name": "app-checkout-prod",
+      "type": "web_app",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "app",
+      "https_only": true,
+      "identity_id": "mi-checkout-prod",
+      "tags": {
+        "env": "prod"
+      }
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.Web/sites/app-hr-prod",
+      "name": "app-hr-prod",
+      "type": "web_app",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "app",
+      "https_only": true,
+      "identity_id": "mi-hr-app",
+      "tags": {
+        "env": "prod"
+      }
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.App/containerApps/app-inventory-prod",
+      "name": "app-inventory-prod",
+      "type": "container_app",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "app",
+      "identity_id": "mi-inventory-app",
+      "tags": {
+        "env": "prod"
+      }
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Storage/storageAccounts/stbillingprod",
+      "name": "stbillingprod",
+      "type": "storage",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": true
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Storage/storageAccounts/stcustomerfilesprod",
+      "name": "stcustomerfilesprod",
+      "type": "storage",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "network_default_action": "Allow",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": true
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Storage/storageAccounts/stappassetsprod",
+      "name": "stappassetsprod",
+      "type": "storage",
+      "resource_group": "rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "network_default_action": "Allow",
+      "allow_blob_public_access": true,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-security-prod/providers/Microsoft.Storage/storageAccounts/stauditlogsprod",
+      "name": "stauditlogsprod",
+      "type": "storage",
+      "resource_group": "rg-security-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": true
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Storage/storageAccounts/stdevtestdata",
+      "name": "stdevtestdata",
+      "type": "storage",
+      "resource_group": "rg-dev-sandbox",
+      "subscription_id": "sub-nvt-shared-002",
+      "network_default_action": "Allow",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.KeyVault/vaults/kv-billing-prod",
+      "name": "kv-billing-prod",
+      "type": "key_vault",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "public_network_access": false,
+      "contains_sensitive_data": true
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.KeyVault/vaults/kv-customer-prod",
+      "name": "kv-customer-prod",
+      "type": "key_vault",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "public_network_access": true,
+      "contains_sensitive_data": true
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.KeyVault/vaults/kv-app-prod",
+      "name": "kv-app-prod",
+      "type": "key_vault",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "public_network_access": false,
+      "contains_sensitive_data": true
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox/providers/Microsoft.KeyVault/vaults/kv-dev-test",
+      "name": "kv-dev-test",
+      "type": "key_vault",
+      "resource_group": "rg-dev-sandbox",
+      "subscription_id": "sub-nvt-shared-002",
+      "public_network_access": true,
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Sql/servers/sql-customer-prod",
+      "name": "sql-customer-prod",
+      "type": "sql_server",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "public_network_access": false,
+      "auth_mode": "entra"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Sql/servers/sql-reporting-prod",
+      "name": "sql-reporting-prod",
+      "type": "sql_server",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "public_network_access": true,
+      "auth_mode": "mixed"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Network/networkSecurityGroups/nsg-web-prod",
+      "name": "nsg-web-prod",
+      "type": "nsg",
+      "resource_group": "rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "web"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.Network/networkSecurityGroups/nsg-app-prod",
+      "name": "nsg-app-prod",
+      "type": "nsg",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "app"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Network/networkSecurityGroups/nsg-data-prod",
+      "name": "nsg-data-prod",
+      "type": "nsg",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "data"
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-ops-tooling/providers/Microsoft.Network/networkSecurityGroups/nsg-admin-shared",
+      "name": "nsg-admin-shared",
+      "type": "nsg",
+      "resource_group": "rg-ops-tooling",
+      "subscription_id": "sub-nvt-shared-002",
+      "zone": "admin"
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Network/networkSecurityGroups/nsg-dev-shared",
+      "name": "nsg-dev-shared",
+      "type": "nsg",
+      "resource_group": "rg-dev-sandbox",
+      "subscription_id": "sub-nvt-shared-002",
+      "zone": "dev"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Network/virtualNetworks/vnet-production",
+      "name": "vnet-production",
+      "type": "vnet",
+      "resource_group": "rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "address_space": "10.41.0.0/16"
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-shared-services/providers/Microsoft.Network/virtualNetworks/vnet-shared",
+      "name": "vnet-shared",
+      "type": "vnet",
+      "resource_group": "rg-shared-services",
+      "subscription_id": "sub-nvt-shared-002",
+      "address_space": "10.42.0.0/16"
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Compute/virtualMachines/vm-aux-01",
+      "name": "vm-aux-01",
+      "type": "vm",
+      "resource_group": "rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "web",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.Storage/storageAccounts/st-aux-02",
+      "name": "st-aux-02",
+      "type": "storage",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "app",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Compute/virtualMachines/vm-aux-03",
+      "name": "vm-aux-03",
+      "type": "vm",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "data",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Storage/storageAccounts/st-aux-04",
+      "name": "st-aux-04",
+      "type": "storage",
+      "resource_group": "rg-dev-sandbox",
+      "subscription_id": "sub-nvt-shared-002",
+      "zone": "dev",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-shared-services/providers/Microsoft.Compute/virtualMachines/vm-aux-05",
+      "name": "vm-aux-05",
+      "type": "vm",
+      "resource_group": "rg-shared-services",
+      "subscription_id": "sub-nvt-shared-002",
+      "zone": "shared",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-web-prod/providers/Microsoft.Storage/storageAccounts/st-aux-06",
+      "name": "st-aux-06",
+      "type": "storage",
+      "resource_group": "rg-web-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "web",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-app-prod/providers/Microsoft.Compute/virtualMachines/vm-aux-07",
+      "name": "vm-aux-07",
+      "type": "vm",
+      "resource_group": "rg-app-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "app",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-prod-001/resourceGroups/rg-data-prod/providers/Microsoft.Storage/storageAccounts/st-aux-08",
+      "name": "st-aux-08",
+      "type": "storage",
+      "resource_group": "rg-data-prod",
+      "subscription_id": "sub-nvt-prod-001",
+      "zone": "data",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    },
+    {
+      "id": "sub-nvt-shared-002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/virtualMachines/vm-aux-09",
+      "name": "vm-aux-09",
+      "type": "vm",
+      "resource_group": "rg-dev-sandbox",
+      "subscription_id": "sub-nvt-shared-002",
+      "zone": "dev",
+      "public_ip": null,
+      "ssh_password_auth": false,
+      "identity_id": null,
+      "network_default_action": "Deny",
+      "allow_blob_public_access": false,
+      "minimum_tls": "TLS1_2",
+      "contains_sensitive_data": false
+    }
+  ],
+  "snapshot_time_utc": "2026-10-14T12:00:00Z"
+}

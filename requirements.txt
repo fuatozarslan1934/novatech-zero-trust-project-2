@@ -1,0 +1,5 @@
+pytest>=8.0
+networkx>=3.2
+rich>=13.0
+python-dotenv>=1.0
+# Optional: install openai or anthropic for external AI explanations

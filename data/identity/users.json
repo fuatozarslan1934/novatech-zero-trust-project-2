@@ -1,0 +1,805 @@
+{
+  "users": [
+    {
+      "id": "u-001",
+      "upn": "morgan.lee@novatech.example",
+      "display_name": "Morgan Lee",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-01-24T12:00:00Z",
+      "last_signin_at": "2026-10-03T12:00:00Z"
+    },
+    {
+      "id": "u-002",
+      "upn": "avery.chen@novatech.example",
+      "display_name": "Avery Chen",
+      "department": "Cloud Security",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-03-05T12:00:00Z",
+      "last_signin_at": "2026-09-14T12:00:00Z"
+    },
+    {
+      "id": "u-003",
+      "upn": "jamie.patel@novatech.example",
+      "display_name": "Jamie Patel",
+      "department": "IT Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-03-03T12:00:00Z",
+      "last_signin_at": "2026-10-13T12:00:00Z"
+    },
+    {
+      "id": "u-004",
+      "upn": "taylor.brooks@novatech.example",
+      "display_name": "Taylor Brooks",
+      "department": "Customer Success",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-08-04T12:00:00Z",
+      "last_signin_at": "2026-09-24T12:00:00Z"
+    },
+    {
+      "id": "u-005",
+      "upn": "alex.kim@novatech.example",
+      "display_name": "Alex Kim",
+      "department": "Cloud Platform",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-02-13T12:00:00Z",
+      "last_signin_at": "2026-09-22T12:00:00Z"
+    },
+    {
+      "id": "u-006",
+      "upn": "jordan.miller@novatech.example",
+      "display_name": "Jordan Miller",
+      "department": "Finance",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-03-03T12:00:00Z",
+      "last_signin_at": "2026-09-10T12:00:00Z"
+    },
+    {
+      "id": "u-007",
+      "upn": "riley.wong@novatech.example",
+      "display_name": "Riley Wong",
+      "department": "Applications",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-05-16T12:00:00Z",
+      "last_signin_at": "2026-09-25T12:00:00Z"
+    },
+    {
+      "id": "u-008",
+      "upn": "sam.reed@novatech.example",
+      "display_name": "Sam Reed",
+      "department": "DevOps",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-05-09T12:00:00Z",
+      "last_signin_at": "2026-09-17T12:00:00Z"
+    },
+    {
+      "id": "u-009",
+      "upn": "casey.diaz@novatech.example",
+      "display_name": "Casey Diaz",
+      "department": "Cloud Platform",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-11-02T12:00:00Z",
+      "last_signin_at": "2026-09-29T12:00:00Z"
+    },
+    {
+      "id": "u-010",
+      "upn": "drew.smith@novatech.example",
+      "display_name": "Drew Smith",
+      "department": "Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-06-05T12:00:00Z",
+      "last_signin_at": "2026-08-31T12:00:00Z"
+    },
+    {
+      "id": "u-011",
+      "upn": "blake.hayes@novatech.example",
+      "display_name": "Blake Hayes",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-05-04T12:00:00Z",
+      "last_signin_at": "2026-08-30T12:00:00Z"
+    },
+    {
+      "id": "u-012",
+      "upn": "robin.park@novatech.example",
+      "display_name": "Robin Park",
+      "department": "Data Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-09-18T12:00:00Z",
+      "last_signin_at": "2026-09-02T12:00:00Z"
+    },
+    {
+      "id": "u-013",
+      "upn": "noel.morris@novatech.example",
+      "display_name": "Noel Morris",
+      "department": "Vendor Support",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-03-08T12:00:00Z",
+      "last_signin_at": "2026-10-12T12:00:00Z"
+    },
+    {
+      "id": "u-014",
+      "upn": "quinn.jones@novatech.example",
+      "display_name": "Quinn Jones",
+      "department": "Security",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-06-19T12:00:00Z",
+      "last_signin_at": "2026-09-24T12:00:00Z"
+    },
+    {
+      "id": "u-015",
+      "upn": "charlie.young@novatech.example",
+      "display_name": "Charlie Young",
+      "department": "Helpdesk",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-11-09T12:00:00Z",
+      "last_signin_at": "2026-08-27T12:00:00Z"
+    },
+    {
+      "id": "u-016",
+      "upn": "skylar.tan@novatech.example",
+      "display_name": "Skylar Tan",
+      "department": "Networking",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-05-30T12:00:00Z",
+      "last_signin_at": "2026-09-08T12:00:00Z"
+    },
+    {
+      "id": "u-017",
+      "upn": "devon.price@novatech.example",
+      "display_name": "Devon Price",
+      "department": "Cloud Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-01-12T12:00:00Z",
+      "last_signin_at": "2026-10-13T12:00:00Z"
+    },
+    {
+      "id": "u-018",
+      "upn": "emerson.gray@novatech.example",
+      "display_name": "Emerson Gray",
+      "department": "Contractor",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-08-27T12:00:00Z",
+      "last_signin_at": "2026-06-11T12:00:00Z"
+    },
+    {
+      "id": "u-019",
+      "upn": "leslie.fox@novatech.example",
+      "display_name": "Leslie Fox",
+      "department": "Infrastructure",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-04-14T12:00:00Z",
+      "last_signin_at": "2026-09-20T12:00:00Z"
+    },
+    {
+      "id": "u-020",
+      "upn": "harper.ward@novatech.example",
+      "display_name": "Harper Ward",
+      "department": "Application Support",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-04-27T12:00:00Z",
+      "last_signin_at": "2026-10-14T12:00:00Z"
+    },
+    {
+      "id": "u-021",
+      "upn": "employee021@novatech.example",
+      "display_name": "Employee 021",
+      "department": "Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-09-26T12:00:00Z",
+      "last_signin_at": "2026-07-12T12:00:00Z"
+    },
+    {
+      "id": "u-022",
+      "upn": "employee022@novatech.example",
+      "display_name": "Employee 022",
+      "department": "Contractor",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-04-18T12:00:00Z",
+      "last_signin_at": "2026-09-14T12:00:00Z"
+    },
+    {
+      "id": "u-023",
+      "upn": "employee023@novatech.example",
+      "display_name": "Employee 023",
+      "department": "Contractor",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-02-21T12:00:00Z",
+      "last_signin_at": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "u-024",
+      "upn": "employee024@novatech.example",
+      "display_name": "Employee 024",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-06-20T12:00:00Z",
+      "last_signin_at": "2026-03-16T12:00:00Z"
+    },
+    {
+      "id": "u-025",
+      "upn": "employee025@novatech.example",
+      "display_name": "Employee 025",
+      "department": "Human Resources",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-05-09T12:00:00Z",
+      "last_signin_at": "2026-07-14T12:00:00Z"
+    },
+    {
+      "id": "u-026",
+      "upn": "employee026@novatech.example",
+      "display_name": "Employee 026",
+      "department": "Applications",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-07-29T12:00:00Z",
+      "last_signin_at": "2026-03-12T12:00:00Z"
+    },
+    {
+      "id": "u-027",
+      "upn": "employee027@novatech.example",
+      "display_name": "Employee 027",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-12-10T12:00:00Z",
+      "last_signin_at": "2026-09-30T12:00:00Z"
+    },
+    {
+      "id": "u-028",
+      "upn": "employee028@novatech.example",
+      "display_name": "Employee 028",
+      "department": "Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-01-21T12:00:00Z",
+      "last_signin_at": "2026-07-31T12:00:00Z"
+    },
+    {
+      "id": "u-029",
+      "upn": "employee029@novatech.example",
+      "display_name": "Employee 029",
+      "department": "Support",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-07-05T12:00:00Z",
+      "last_signin_at": "2026-10-13T12:00:00Z"
+    },
+    {
+      "id": "u-030",
+      "upn": "employee030@novatech.example",
+      "display_name": "Employee 030",
+      "department": "Human Resources",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-04-08T12:00:00Z",
+      "last_signin_at": "2026-03-05T12:00:00Z"
+    },
+    {
+      "id": "u-031",
+      "upn": "employee031@novatech.example",
+      "display_name": "Employee 031",
+      "department": "Applications",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-07-02T12:00:00Z",
+      "last_signin_at": "2026-05-29T12:00:00Z"
+    },
+    {
+      "id": "u-032",
+      "upn": "employee032@novatech.example",
+      "display_name": "Employee 032",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-03-28T12:00:00Z",
+      "last_signin_at": "2026-04-08T12:00:00Z"
+    },
+    {
+      "id": "u-033",
+      "upn": "employee033@novatech.example",
+      "display_name": "Employee 033",
+      "department": "Applications",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-10-11T12:00:00Z",
+      "last_signin_at": "2026-10-13T12:00:00Z"
+    },
+    {
+      "id": "u-034",
+      "upn": "employee034@novatech.example",
+      "display_name": "Employee 034",
+      "department": "Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-11-24T12:00:00Z",
+      "last_signin_at": "2026-09-16T12:00:00Z"
+    },
+    {
+      "id": "u-035",
+      "upn": "employee035@novatech.example",
+      "display_name": "Employee 035",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-06-19T12:00:00Z",
+      "last_signin_at": "2026-04-21T12:00:00Z"
+    },
+    {
+      "id": "u-036",
+      "upn": "employee036@novatech.example",
+      "display_name": "Employee 036",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-01-17T12:00:00Z",
+      "last_signin_at": "2026-10-12T12:00:00Z"
+    },
+    {
+      "id": "u-037",
+      "upn": "employee037@novatech.example",
+      "display_name": "Employee 037",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-08-17T12:00:00Z",
+      "last_signin_at": "2026-05-26T12:00:00Z"
+    },
+    {
+      "id": "u-038",
+      "upn": "employee038@novatech.example",
+      "display_name": "Employee 038",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-06-19T12:00:00Z",
+      "last_signin_at": "2026-03-20T12:00:00Z"
+    },
+    {
+      "id": "u-039",
+      "upn": "employee039@novatech.example",
+      "display_name": "Employee 039",
+      "department": "Human Resources",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-11-30T12:00:00Z",
+      "last_signin_at": "2026-10-14T12:00:00Z"
+    },
+    {
+      "id": "u-040",
+      "upn": "employee040@novatech.example",
+      "display_name": "Employee 040",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-06-22T12:00:00Z",
+      "last_signin_at": "2026-09-20T12:00:00Z"
+    },
+    {
+      "id": "u-041",
+      "upn": "employee041@novatech.example",
+      "display_name": "Employee 041",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-04-01T12:00:00Z",
+      "last_signin_at": "2026-08-14T12:00:00Z"
+    },
+    {
+      "id": "u-042",
+      "upn": "employee042@novatech.example",
+      "display_name": "Employee 042",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-01-08T12:00:00Z",
+      "last_signin_at": "2026-07-13T12:00:00Z"
+    },
+    {
+      "id": "u-043",
+      "upn": "employee043@novatech.example",
+      "display_name": "Employee 043",
+      "department": "Human Resources",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-02-03T12:00:00Z",
+      "last_signin_at": "2026-06-05T12:00:00Z"
+    },
+    {
+      "id": "u-044",
+      "upn": "employee044@novatech.example",
+      "display_name": "Employee 044",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-06-13T12:00:00Z",
+      "last_signin_at": "2026-09-08T12:00:00Z"
+    },
+    {
+      "id": "u-045",
+      "upn": "employee045@novatech.example",
+      "display_name": "Employee 045",
+      "department": "Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-11-11T12:00:00Z",
+      "last_signin_at": "2026-06-20T12:00:00Z"
+    },
+    {
+      "id": "u-046",
+      "upn": "employee046@novatech.example",
+      "display_name": "Employee 046",
+      "department": "Support",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-03-12T12:00:00Z",
+      "last_signin_at": "2026-06-16T12:00:00Z"
+    },
+    {
+      "id": "u-047",
+      "upn": "employee047@novatech.example",
+      "display_name": "Employee 047",
+      "department": "Analytics",
+      "enabled": false,
+      "account_type": "member",
+      "created_at": "2024-07-19T12:00:00Z",
+      "last_signin_at": "2026-04-27T12:00:00Z"
+    },
+    {
+      "id": "u-048",
+      "upn": "employee048@novatech.example",
+      "display_name": "Employee 048",
+      "department": "Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-06-20T12:00:00Z",
+      "last_signin_at": "2026-06-16T12:00:00Z"
+    },
+    {
+      "id": "u-049",
+      "upn": "employee049@novatech.example",
+      "display_name": "Employee 049",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-09-04T12:00:00Z",
+      "last_signin_at": "2026-03-26T12:00:00Z"
+    },
+    {
+      "id": "u-050",
+      "upn": "employee050@novatech.example",
+      "display_name": "Employee 050",
+      "department": "Human Resources",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-09-15T12:00:00Z",
+      "last_signin_at": "2026-08-19T12:00:00Z"
+    },
+    {
+      "id": "u-051",
+      "upn": "employee051@novatech.example",
+      "display_name": "Employee 051",
+      "department": "Finance",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-05-26T12:00:00Z",
+      "last_signin_at": "2026-03-24T12:00:00Z"
+    },
+    {
+      "id": "u-052",
+      "upn": "employee052@novatech.example",
+      "display_name": "Employee 052",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-06-22T12:00:00Z",
+      "last_signin_at": "2026-07-11T12:00:00Z"
+    },
+    {
+      "id": "u-053",
+      "upn": "employee053@novatech.example",
+      "display_name": "Employee 053",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-05-06T12:00:00Z",
+      "last_signin_at": "2026-06-28T12:00:00Z"
+    },
+    {
+      "id": "u-054",
+      "upn": "employee054@novatech.example",
+      "display_name": "Employee 054",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-02-19T12:00:00Z",
+      "last_signin_at": "2026-08-02T12:00:00Z"
+    },
+    {
+      "id": "u-055",
+      "upn": "employee055@novatech.example",
+      "display_name": "Employee 055",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-10-18T12:00:00Z",
+      "last_signin_at": "2026-07-05T12:00:00Z"
+    },
+    {
+      "id": "u-056",
+      "upn": "employee056@novatech.example",
+      "display_name": "Employee 056",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-04-18T12:00:00Z",
+      "last_signin_at": "2026-07-10T12:00:00Z"
+    },
+    {
+      "id": "u-057",
+      "upn": "employee057@novatech.example",
+      "display_name": "Employee 057",
+      "department": "Human Resources",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-06-01T12:00:00Z",
+      "last_signin_at": "2026-07-18T12:00:00Z"
+    },
+    {
+      "id": "u-058",
+      "upn": "employee058@novatech.example",
+      "display_name": "Employee 058",
+      "department": "Finance",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-11-19T12:00:00Z",
+      "last_signin_at": "2026-03-17T12:00:00Z"
+    },
+    {
+      "id": "u-059",
+      "upn": "employee059@novatech.example",
+      "display_name": "Employee 059",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-08-21T12:00:00Z",
+      "last_signin_at": "2026-05-18T12:00:00Z"
+    },
+    {
+      "id": "u-060",
+      "upn": "employee060@novatech.example",
+      "display_name": "Employee 060",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-12-05T12:00:00Z",
+      "last_signin_at": "2026-03-31T12:00:00Z"
+    },
+    {
+      "id": "u-061",
+      "upn": "employee061@novatech.example",
+      "display_name": "Employee 061",
+      "department": "Contractor",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-01-30T12:00:00Z",
+      "last_signin_at": "2026-10-02T12:00:00Z"
+    },
+    {
+      "id": "u-062",
+      "upn": "employee062@novatech.example",
+      "display_name": "Employee 062",
+      "department": "Applications",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-09-26T12:00:00Z",
+      "last_signin_at": "2026-07-24T12:00:00Z"
+    },
+    {
+      "id": "u-063",
+      "upn": "employee063@novatech.example",
+      "display_name": "Employee 063",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-04-18T12:00:00Z",
+      "last_signin_at": "2026-08-15T12:00:00Z"
+    },
+    {
+      "id": "u-064",
+      "upn": "employee064@novatech.example",
+      "display_name": "Employee 064",
+      "department": "Contractor",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-07-29T12:00:00Z",
+      "last_signin_at": "2026-09-26T12:00:00Z"
+    },
+    {
+      "id": "u-065",
+      "upn": "employee065@novatech.example",
+      "display_name": "Employee 065",
+      "department": "Support",
+      "enabled": false,
+      "account_type": "member",
+      "created_at": "2025-06-06T12:00:00Z",
+      "last_signin_at": "2026-09-14T12:00:00Z"
+    },
+    {
+      "id": "u-066",
+      "upn": "employee066@novatech.example",
+      "display_name": "Employee 066",
+      "department": "Support",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-07-06T12:00:00Z",
+      "last_signin_at": "2026-10-01T12:00:00Z"
+    },
+    {
+      "id": "u-067",
+      "upn": "employee067@novatech.example",
+      "display_name": "Employee 067",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-05-02T12:00:00Z",
+      "last_signin_at": "2026-09-01T12:00:00Z"
+    },
+    {
+      "id": "u-068",
+      "upn": "employee068@novatech.example",
+      "display_name": "Employee 068",
+      "department": "Human Resources",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-09-01T12:00:00Z",
+      "last_signin_at": "2026-02-27T12:00:00Z"
+    },
+    {
+      "id": "u-069",
+      "upn": "employee069@novatech.example",
+      "display_name": "Employee 069",
+      "department": "Sales",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-08-10T12:00:00Z",
+      "last_signin_at": "2026-04-25T12:00:00Z"
+    },
+    {
+      "id": "u-070",
+      "upn": "employee070@novatech.example",
+      "display_name": "Employee 070",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-07-10T12:00:00Z",
+      "last_signin_at": "2026-03-11T12:00:00Z"
+    },
+    {
+      "id": "u-071",
+      "upn": "employee071@novatech.example",
+      "display_name": "Employee 071",
+      "department": "Finance",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-10-31T12:00:00Z",
+      "last_signin_at": "2026-07-31T12:00:00Z"
+    },
+    {
+      "id": "u-072",
+      "upn": "employee072@novatech.example",
+      "display_name": "Employee 072",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-12-27T12:00:00Z",
+      "last_signin_at": "2026-07-11T12:00:00Z"
+    },
+    {
+      "id": "u-073",
+      "upn": "employee073@novatech.example",
+      "display_name": "Employee 073",
+      "department": "Finance",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-11-16T12:00:00Z",
+      "last_signin_at": "2026-05-07T12:00:00Z"
+    },
+    {
+      "id": "u-074",
+      "upn": "employee074@novatech.example",
+      "display_name": "Employee 074",
+      "department": "Support",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-06-20T12:00:00Z",
+      "last_signin_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "u-075",
+      "upn": "employee075@novatech.example",
+      "display_name": "Employee 075",
+      "department": "Finance",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-11-17T12:00:00Z",
+      "last_signin_at": "2026-06-02T12:00:00Z"
+    },
+    {
+      "id": "u-076",
+      "upn": "employee076@novatech.example",
+      "display_name": "Employee 076",
+      "department": "Operations",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-12-12T12:00:00Z",
+      "last_signin_at": "2026-04-26T12:00:00Z"
+    },
+    {
+      "id": "u-077",
+      "upn": "employee077@novatech.example",
+      "display_name": "Employee 077",
+      "department": "Analytics",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2024-11-05T12:00:00Z",
+      "last_signin_at": "2026-08-15T12:00:00Z"
+    },
+    {
+      "id": "u-078",
+      "upn": "employee078@novatech.example",
+      "display_name": "Employee 078",
+      "department": "Finance",
+      "enabled": false,
+      "account_type": "member",
+      "created_at": "2025-07-19T12:00:00Z",
+      "last_signin_at": "2026-04-16T12:00:00Z"
+    },
+    {
+      "id": "u-079",
+      "upn": "employee079@novatech.example",
+      "display_name": "Employee 079",
+      "department": "Support",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2025-03-14T12:00:00Z",
+      "last_signin_at": "2026-05-23T12:00:00Z"
+    },
+    {
+      "id": "u-080",
+      "upn": "employee080@novatech.example",
+      "display_name": "Employee 080",
+      "department": "Platform Engineering",
+      "enabled": true,
+      "account_type": "member",
+      "created_at": "2026-01-25T12:00:00Z",
+      "last_signin_at": "2026-07-24T12:00:00Z"
+    }
+  ],
+  "snapshot_time_utc": "2026-10-14T12:00:00Z"
+}
