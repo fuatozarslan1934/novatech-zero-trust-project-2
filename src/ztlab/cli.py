@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from .pim import analyze_privileges
 from .permissions import principal_access, resource_access
 from .reference_validation import validate_access_references
 from .data_loader import (
@@ -99,6 +100,13 @@ def main() -> int:
 
         return 0
     # PHASE2_ACCESS_HANDLER
+    # PHASE3_PRIVILEGED_HANDLER
+    if args.command == "privileged":
+        report = analyze_privileges(Path(args.data_dir))
+        import json as _json
+        print(_json.dumps(report, indent=2))
+        return 0
+
     if args.command == "access":
         if bool(args.principal) == bool(args.resource):
             parser.error("Specify exactly one: --principal or --resource")
