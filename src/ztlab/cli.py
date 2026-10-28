@@ -5,13 +5,16 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-
+from .reference_validation import validate_access_references
 from .data_loader import (
     validate_data,
     validate_identity_data,
     DEFAULT_DATA_DIR,
 )
 from .inventory import build_inventory
+from .schema_validation import validate_schemas
+from .schema_validation import validate_all_schemas
+from .csv_validation import validate_csv_data
 
 
 COMMANDS = [
@@ -71,12 +74,29 @@ def main() -> int:
 
     if args.command == "validate-data":
         counts = validate_data(data_dir)
-        results = validate_identity_data(data_dir)
+        identity_results = validate_identity_data(data_dir)
+        access_results = validate_access_references(data_dir)
+        schema_results = validate_all_schemas(data_dir)
+        csv_results = validate_csv_data(data_dir)
 
         print("Dataset readable:", counts)
-        print("Identity validation:", results)
-        return 0
+        print("Identity validation:", identity_results)
+        print("Access reference validation:", access_results)
 
+        print("JSON files checked:", len(schema_results))
+        print(
+            "JSON schema issues:",
+            sum(len(v) for v in schema_results.values())
+        )
+
+        for filename, result in csv_results.items():
+            print(
+                filename,
+                "Records:", result["records"],
+                "Issues:", len(result["issues"])
+            )
+
+        return 0
     if args.command == "inventory":
         results = build_inventory(data_dir)
         print(json.dumps(results, indent=2))

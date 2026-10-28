@@ -121,3 +121,27 @@ def validate_identity_data(data_dir: Path = DEFAULT_DATA_DIR) -> dict:
             and not is_valid_timestamp(user["last_signin_at"])
         ],
     }
+def find_missing_required_fields(
+    records: list[dict],
+    required_fields: list[str],
+) -> list[dict]:
+    issues = []
+
+    for index, record in enumerate(records):
+        missing = [
+            field for field in required_fields
+            if field not in record
+            or record[field] is None
+            or (
+                isinstance(record[field], str)
+                and not record[field].strip()
+            )
+        ]
+
+        if missing:
+            issues.append({
+                "row": index,
+                "missing_fields": missing,
+            })
+
+    return issues
