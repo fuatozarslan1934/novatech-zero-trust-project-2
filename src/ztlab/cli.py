@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from .permissions import principal_access, resource_access
 from .reference_validation import validate_access_references
 from .data_loader import (
     validate_data,
@@ -97,6 +98,21 @@ def main() -> int:
             )
 
         return 0
+    # PHASE2_ACCESS_HANDLER
+    if args.command == "access":
+        if bool(args.principal) == bool(args.resource):
+            parser.error("Specify exactly one: --principal or --resource")
+        try:
+            if args.principal:
+                result = principal_access(args.principal, Path(args.data_dir))
+            else:
+                result = resource_access(args.resource, Path(args.data_dir))
+        except ValueError as exc:
+            parser.error(str(exc))
+        import json as _json
+        print(_json.dumps(result, indent=2))
+        return 0
+
     if args.command == "inventory":
         results = build_inventory(data_dir)
         print(json.dumps(results, indent=2))
