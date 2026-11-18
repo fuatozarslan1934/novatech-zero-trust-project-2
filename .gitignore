@@ -11,3 +11,17 @@ __pycache__/
 reports/*.csv
 reports/*.json
 reports/*.html
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pem
+*.key
+.DS_Store
+reports/*.csv
+reports/*.json
+reports/*.html
+*.egg-info/
