@@ -1,7 +1,7 @@
 """NovaTech Zero Trust Security Analyzer CLI."""
 
 from __future__ import annotations
-
+from .access_review import review_write_access
 import argparse
 import json
 from pathlib import Path
@@ -23,6 +23,7 @@ COMMANDS = [
     "validate-data",
     "inventory",
     "access",
+    "access-review",
     "privileged",
     "policy-check",
     "attack-paths",
@@ -53,6 +54,8 @@ def main() -> int:
         if cmd == "access":
             p.add_argument("--principal")
             p.add_argument("--resource")
+        elif cmd == "access-review":
+                p.add_argument("--resource", required=True)
 
         elif cmd == "policy-check":
             p.add_argument("--user", required=True)
@@ -120,7 +123,10 @@ def main() -> int:
         import json as _json
         print(_json.dumps(result, indent=2))
         return 0
-
+    if args.command == "access-review":
+        result = review_write_access(args.resource, data_dir)
+        print(json.dumps(result, indent=2))
+        return 0
     if args.command == "inventory":
         results = build_inventory(data_dir)
         print(json.dumps(results, indent=2))
